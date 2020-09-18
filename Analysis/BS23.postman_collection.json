@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "ac340bef-3f98-49e0-920c-862172101aff",
+		"name": "BS23",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get By All Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57298/api/comment?pageNumber=1&pageSize=1&post=post 2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57298",
+					"path": [
+						"api",
+						"comment"
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "1"
+						},
+						{
+							"key": "post",
+							"value": "post 2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Wihtout Filter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57298/api/comment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57298",
+					"path": [
+						"api",
+						"comment"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
